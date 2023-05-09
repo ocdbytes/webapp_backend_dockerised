@@ -29,7 +29,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/family/Desktop/Docker/webapp_dockerised/venv"
+set -gx VIRTUAL_ENV "/Users/family/Desktop/webapp_backend_dockerised/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

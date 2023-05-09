@@ -7,6 +7,12 @@ python3 -m venv venv
 . venv/bin/activate
 ```
 
+This project
+
+```bash
+docker pull w3ts0ck3t/devops_project
+```
+
 Now we will create our requirements file in project root using
 
 ```bash
@@ -45,4 +51,17 @@ If we want to get the shell inside the container we can get it using
 
 ```bash
 docker exec -it <container_id/container_name> /bin/sh
+```
+
+If we want to push our image to docker hub
+
+```bash
+docker tag python-fastapi-app:latest <USERNAME>/<REPO_NAME>:latest
+docker push <USERNAME>/<REPO_NAME>:latest
+```
+
+After pushing pull the project
+
+```bash
+docker pull <USERNAME>/<REPO_NAME>:<TAG>
 ```
